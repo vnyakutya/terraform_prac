@@ -32,11 +32,3 @@ output "debug-data" {
 output "debug-branch-protection" {
   value = github_branch_protection.main
 }
-
-data "github_user" "current" {
-  username = ""
-}
-
-output "current_github_login" {
-  value = "${data.github_user.current.login}"
-}
