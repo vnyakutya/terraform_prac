@@ -26,7 +26,7 @@ resource "github_branch_protection" "main" {
 
 
 output "debug-data" {
-  value = data.github_repository.main
+  value = data.github_repository.test
 }
 
 output "debug-branch-protection" {
