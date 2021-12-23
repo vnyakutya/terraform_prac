@@ -40,9 +40,3 @@ data "github_user" "current" {
 output "current_github_login" {
   value = "${data.github_user.current.login}"
 }
-
-required_pull_request_reviews {
-    dismiss_stale_reviews  = true
-    restrict_dismissals    = true
-    dismissal_restrictions = data.github_user.current.node_id
-  }
