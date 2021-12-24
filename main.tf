@@ -10,7 +10,8 @@ terraform {
 }
 
 provider "github" {
-   token = var.token
+  username = var.username 
+  token = var.token
 }
 
 data "github_repository" "test" {

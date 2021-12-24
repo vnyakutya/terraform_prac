@@ -1,4 +1,4 @@
-variable "owner" {
+variable "username" {
   description = "github owner"
   type        = string
   sensitive   = true
