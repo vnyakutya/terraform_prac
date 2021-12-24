@@ -11,7 +11,6 @@ terraform {
 
 provider "github" {
    token = var.token
-   owner = "${var.github_owner}"
 }
 
 data "github_repository" "test" {
