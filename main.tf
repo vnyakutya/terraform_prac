@@ -22,6 +22,15 @@ resource "github_branch_protection" "main" {
   pattern          = "main"
   enforce_admins   = true
   allows_deletions = true
+  
+  required_status_checks {
+    strict   = true
+  }
+
+  required_pull_request_reviews {
+    dismiss_stale_reviews = true
+    restrict_dismissals    = true
+  }
 }
 
 output "debug-data" {
