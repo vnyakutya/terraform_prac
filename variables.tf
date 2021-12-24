@@ -1,3 +1,3 @@
 variable "token" {
-  default = ""
+  default = GITHUB_TOKEN
 }
