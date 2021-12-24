@@ -29,7 +29,7 @@ resource "github_branch_protection" "main" {
 
   required_pull_request_reviews {
     dismiss_stale_reviews = true
-    restrict_dismissals    = true
+    restrict_dismissals    = false
   }
 }
 
