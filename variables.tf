@@ -1,5 +1,4 @@
-variable "github_token" {
+variable "token" {
    type = string
-   token = ""
-   owner = "vnyakutya"
+   default = "GITHUB_TOKEN"
 }
