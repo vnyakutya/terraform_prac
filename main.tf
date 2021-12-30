@@ -26,12 +26,13 @@ resource "github_branch_protection" "main" {
   required_status_checks {
     strict   = true
   }
-
+/*
   required_pull_request_reviews {
     dismiss_stale_reviews = false
     restrict_dismissals    = false
-  }
-}
+    required_approving_review_count = 1
+  } */
+} 
 
 output "debug-data" {
   value = data.github_repository.test
