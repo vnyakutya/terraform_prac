@@ -10,8 +10,7 @@ terraform {
 }
 
 provider "github" {
-  /* token = var.token */
-  token = "GITHUB_TOKEN"
+  token = var.token 
   owner = "vnyakutya"
 }
 
