@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "github" {
-  token = var.token
+  token = var.token 
   owner = "vnyakutya"
 }
 
@@ -34,11 +34,3 @@ resource "github_branch_protection" "main" {
     required_approving_review_count = 1
   } */
 } 
-
-output "debug-data" {
-  value = data.github_repository.test
-}
-
-output "debug-branch-protection" {
-  value = github_branch_protection.main
-}
